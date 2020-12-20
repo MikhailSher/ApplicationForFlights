@@ -25,27 +25,27 @@ public class Main {
 
         System.out.println("All flight numbers with more than two hours in the air:");
         System.out.println(daoForFlight.findAllWithFlightLongerThanTwoHours(flights));
-        System.out.println("All flight numbers with more than two hours ground time:");
-        System.out.println(daoForFlight.findAllFlightNumberWithMoreThenTwoGroundTime(flights));
-        System.out.println("All flight numbers departing in the past:");
-        System.out.println(daoForFlight.findAllFlightNumberDepartingInThePast(flights));
-        System.out.println("All flight numbers with one segment:");
-        System.out.println(daoForFlight.findAllFlightNumberWithOneFlight(flights));
         System.out.println("All flight numbers with more then two segments:");
         System.out.println(daoForFlight.findAllFlightNumberWithMoreThenTwoFlight(flightsSingleton));
         System.out.println("All flight numbers with two segments:");
         System.out.println(daoForFlight.findAllFlightNumberWithTwoFlight(flightsSingleton));
-        System.out.println("A one segment flight:");
+        System.out.println("All flight numbers with one segment:");
+        System.out.println(daoForFlight.findAllFlightNumberWithOneFlight(flights));
+        System.out.println("A single flight:");
         System.out.println(daoForFlight.findAllWithOneFlight(flights));
-        System.out.println("A flight with more than two hours ground time:");
+        System.out.println("All flight numbers with more than two hours ground time:");
+        System.out.println(daoForFlight.findAllFlightNumberWithMoreThenTwoGroundTime(flights));
+        System.out.println("A flights with more than two hours ground time:");
         System.out.println(daoForFlight.findAllWithMoreThenTwoGroundTime(flightsSingleton));
-        System.out.println("A flight that departs before it arrives:");
+        System.out.println("A flights that departs before it arrives:");
         System.out.println(daoForFlight.findAllBeforeItArrives(flights));
-        System.out.println("A flight departing in the past:");
+        System.out.println("All flight numbers departing in the past:");
+        System.out.println(daoForFlight.findAllFlightNumberDepartingInThePast(flights));
+        System.out.println("A flights departing in the past:");
         System.out.println(daoForFlight.findAllDepartingInThePast(flights));
-        System.out.println("A flight departing in the past(using Singleton pattern):");
+        System.out.println("A flights departing in the past:");
         System.out.println(daoForFlight.findAllDepartingInThePast(flightsSingleton));
-        System.out.println("A multi segment flight:");
+        System.out.println("A multi segment flights:");
         System.out.println(daoForFlight.findAllWithMoreThenOneFlight(flights));
     }
 }
